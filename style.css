@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' ,sans-serif;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size: 30px;
+    position: relative;
+    margin-bottom: 50px;
+}
+h1::after{
+    content: '';
+    width: 150px;
+    height: 3px;
+    background-color: blue;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.review-box{
+    background-color: #fff;
+    width: 90%;
+    max-width: 700px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: -10px 10px 30px rgba(0,0,0,0.25);
+    position: relative;overflow: hidden;
+}
+.card{
+    background-color: #fff;
+    width: 100%;
+    height: 300px;
+    padding: 30px 35px ;
+    box-sizing: border-box;
+    position: relative;
+    top: 0;
+    right: 0;
+    transition: .5s ease;
+    z-index: 1;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+.profile .img{
+    width: 70px;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+h3{
+    font-size: 26px;
+    color: blue;
+}
+p{
+    line-height: 22px;
+}
+.slide{
+    width: 100%;
+    padding-right: 60px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.slide-bar{
+    width: 60px;
+    height: 100%;
+    padding:25px 0;
+    position: absolute;
+    background-color: blue;
+    top: 0;
+    right: 0;display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+button{
+    border: none;
+    width: 28px;
+    height: 27px;
+    font-size: 32px;
+    border-radius: 50%;
+    color: blue;
+    background-color: #fff;
+    border: #fff solid 2px;
+    cursor: pointer;
+    overflow: hidden;
+}
+#down-arrow{
+    rotate: 180deg;
+}
+button:hover{
+    background-color: blue;
+    color: #fff;
+    
+}
+.card::before{
+    content: " ";
+    background-color: blue;
+    width: 110px;
+    height: 110px;
+    z-index: -1;
+    border-radius: 0 0 100% 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+::selection{
+    background-color: blue;
+    color: #fff;
+}
+
+
+
